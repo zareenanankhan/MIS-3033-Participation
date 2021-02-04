@@ -18,7 +18,7 @@
         <Label Content="What is your name?" HorizontalAlignment="Left" Margin="48,120,0,0" VerticalAlignment="Top" FontSize="30" Width="323"/>
         <TextBox x:Name="DOBBox" HorizontalAlignment="Left" Margin="400,188,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="390" Height="80" FontSize="36" TextChanged="TextBox_TextChanged"/>
         <Label Content="When is your birthday?&#xD;&#xA;" HorizontalAlignment="Left" Margin="436,120,0,0" VerticalAlignment="Top" FontSize="30" Width="323"/>
-        <Button x:Name="calculateage" Content="Click me to calculate your age!" HorizontalAlignment="Center" Margin="0,316,0,0" VerticalAlignment="Top" Height="108" Width="244" Background="#FFBED149" FontSize="15" FontWeight="Bold" Click="calculateage_Click" IsDefault="True" MouseEnter="btnSubmit_MouseEnter" MouseLeave="btnSubmit_MouseLeave"/> \
+        <Button x:Name="calculateage" Content="Click me to calculate your age!" HorizontalAlignment="Center" Margin="0,316,0,0" VerticalAlignment="Top" Height="108" Width="244" Background="#FFBED149" FontSize="15" FontWeight="Bold" Click="calculateage_Click" IsDefault="True" MouseEnter="btnSubmit_MouseEnter" MouseLeave="btnSubmit_MouseLeave"/> 
 
 
     </Grid>
