@@ -23,6 +23,7 @@ namespace WpfApp
         public MainWindow()
         {
             InitializeComponent();
+            Button button = new Button();
         }
     }
 }
