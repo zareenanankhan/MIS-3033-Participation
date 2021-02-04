@@ -1,0 +1,25 @@
+﻿<Window x:Class="First_WPF_Application_Participation.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:First_WPF_Application_Participation"
+        mc:Ignorable="d"
+        Title="First WPF Application Participation" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="Black"/>
+                <GradientStop Color="#FF05CD96" Offset="1"/>
+                <GradientStop Color="#FED1B922" Offset="0.052"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <TextBox x:Name="NameBox" HorizontalAlignment="Left" Margin="10,188,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="375" Height="80" FontSize="36"/>
+        <Label Content="What is your name?" HorizontalAlignment="Left" Margin="48,120,0,0" VerticalAlignment="Top" FontSize="30" Width="323"/>
+        <TextBox x:Name="DOBBox" HorizontalAlignment="Left" Margin="400,188,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="390" Height="80" FontSize="36" TextChanged="TextBox_TextChanged"/>
+        <Label Content="When is your birthday?&#xD;&#xA;" HorizontalAlignment="Left" Margin="436,120,0,0" VerticalAlignment="Top" FontSize="30" Width="323"/>
+        <Button x:Name="calculateage" Content="Click me to calculate your age!" HorizontalAlignment="Center" Margin="0,316,0,0" VerticalAlignment="Top" Height="108" Width="244" Background="#FFBED149" FontSize="15" FontWeight="Bold" Click="calculateage_Click" IsDefault="True" MouseEnter="btnSubmit_MouseEnter" MouseLeave="btnSubmit_MouseLeave"/> \
+
+
+    </Grid>
+</Window>
