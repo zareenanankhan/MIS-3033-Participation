@@ -38,27 +38,27 @@ namespace WpfApp
             string answer = txtFavoriteNumber.Text;
             double result = Convert.ToDouble(answer);
 
-            if (result>5)
-            {
-                MessageBox.Show("result is greater than 5!");
-            }
-            else
-            {
-                MessageBox.Show("result is not equal to 5!")
-            }
+            //if (result>5)
+            //{
+            //    MessageBox.Show("result is greater than 5!");
+            //}
+            //else
+            //{
+            //    MessageBox.Show("result is not equal to 5!")
+            //}
 
-            switch (result)
-            {
-                case 5:
-                    MessageBox.Show("result is equal to 5!");
-                    break;
-                case 6:
-                    MessageBox.Show("result is equal to 6!");
-                    break;
+            //switch (result)
+            //{
+            //    case 5:
+            //        MessageBox.Show("result is equal to 5!");
+            //        break;
+            //    case 6:
+            //        MessageBox.Show("result is equal to 6!");
+            //        break;
                     
-                default:
-                    MessageBox.Show("result is not equal to 5!");
-                    break;
+            //    default:
+            //        MessageBox.Show("result is not equal to 5!");
+            //        break;
             
             }
 
