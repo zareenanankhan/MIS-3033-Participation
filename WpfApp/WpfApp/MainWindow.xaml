@@ -5,11 +5,20 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp"
         mc:Ignorable="d"
-        Title="My first WPF Application" Height="450" Width="800">
+        Title="My first WPF Application" Height="450" Width="644">
+    <Window.Background>
+        <ImageBrush ImageSource="https://media3.giphy.com/media/11JfYxBmCpQDde/200.gif"/>
+    </Window.Background>
     <Grid>
-        <Label Content="Label" HorizontalAlignment="Left" Margin="368,88,0,0" VerticalAlignment="Top"/>
-        <Button Content="Click Me Please!" HorizontalAlignment="Left" Margin="115,280,0,0" VerticalAlignment="Top" Height="96" Width="544" IsCancel="True"/>
-        <Label Content="Label" HorizontalAlignment="Left" Margin="190,152,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblTitle" Content="My First WPF Application" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" FontSize="48" Foreground="#FFF71616"/>
+        <Button x:Name="btnSubmit" Content="Click Me Please!" HorizontalAlignment="Left" Margin="322,274,0,0" VerticalAlignment="Top" Height="96" Width="184" Click="btnSubmit_Click" IsDefault="True"/>
+        <Label x:Name="lblMessage" HorizontalAlignment="Left" Margin="184,89,0,0" VerticalAlignment="Top" Foreground="#FFFB0F0F">
+            <Label x:Name="lblMessage_Copy1" Content="Label" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="#FFFB0F0F"/>
+        </Label>
+        <Label x:Name="lblMessage_Copy" Content="Favorite #" HorizontalAlignment="Left" Margin="172,143,0,0" VerticalAlignment="Top" Foreground="#FFFB0F0F" RenderTransformOrigin="0.487,3.006"/>
+        <TextBox x:Name="txtFavoriteNumber" HorizontalAlignment="Left" Margin="239,151,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="lblOutput" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="#FFFB0F0F" Margin="189,199,0,0"/>
+        <Button x:Name="btnClose" Content="Don't click Me Please!" HorizontalAlignment="Left" Margin="111,274,0,0" VerticalAlignment="Top" Height="96" Width="184" IsCancel="True" Click="btnClose_Click"/>
 
 
 

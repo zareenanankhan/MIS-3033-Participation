@@ -23,7 +23,29 @@ namespace WpfApp
         public MainWindow()
         {
             InitializeComponent();
-            Button button = new Button();
+
+            lblMessage.Content = string.Empty;
+            txtFavoriteNumber.Clear();
+        }
+
+        private void btnSubmit_Click(object sender, RoutedEventArgs e)
+        {
+            //MessageBox.Show("You clicked me!");
+
+            MessageBox.Show("Thanks for clicking me!", "Clicked", MessageBoxButton.YesNo, MessageBoxImage.Exclamation);
+            lblMessage.Content = "Hello World!";
+
+            string answer = txtFavoriteNumber.Text;
+            double result = Convert.ToDouble(answer);
+
+            lblOutput.Content = $"Your favorite # mul;tipled by 5 is {(result * 5).ToString("N2")}!";
+
+        }
+
+        private void btnClose_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Haha clicked me!");
+            Environment.Exit(0);
         }
     }
 }
