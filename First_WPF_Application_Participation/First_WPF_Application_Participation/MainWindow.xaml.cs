@@ -42,12 +42,12 @@ namespace First_WPF_Application_Participation
 
         private void btnSubmit_MouseEnter(object sender, MouseEventArgs e)
         {
-
+            calculateage.Background = Brushes.Red;
         }
 
         private void btnSubmit_MouseLeave(object sender, MouseEventArgs e)
         {
-
+            calculateage.Background = Brushes.Blue;
         }
 
     }
