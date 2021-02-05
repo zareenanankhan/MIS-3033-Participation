@@ -40,7 +40,7 @@ namespace First_WPF_Application_Participation
             
         }
 
-        private void btnSubmit_MouseEnter(object sender, MouseEventArgs e)
+        private void btnSubmit_MouseEnter(object sender, EventArgs e)
         {
             calculateage.Background = Brushes.Red;
         }
