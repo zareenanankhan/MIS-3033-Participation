@@ -7,13 +7,13 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid x:Name="Windowname">
-        <Button x:Name="buttonsubmit" Content="Add Pet" HorizontalAlignment="Left" Height="53" Margin="327,329,0,0" VerticalAlignment="Top" Width="119"/>
-        <Label Content="Name:" HorizontalAlignment="Left" Height="42" Margin="10,86,0,0" VerticalAlignment="Top" Width="93" FontSize="22"/>
-        <TextBox x:Name="textname" HorizontalAlignment="Left" Height="47" Margin="86,81,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="153" FontSize="22"/>
-        <Label Content="Breed:" HorizontalAlignment="Left" Height="42" Margin="10,151,0,0" VerticalAlignment="Top" Width="93" FontSize="22"/>
-        <TextBox x:Name="textbreed" HorizontalAlignment="Left" Height="47" Margin="86,146,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="153" FontSize="22"/>
-        <Label Content="Picture URL:" HorizontalAlignment="Left" Height="42" Margin="10,217,0,0" VerticalAlignment="Top" Width="130" FontSize="22"/>
-        <TextBox x:Name="textpicture" HorizontalAlignment="Left" Height="47" Margin="145,212,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="153" FontSize="22"/>
+        <Button x:Name="buttonsubmit" Content="Add Pet" HorizontalAlignment="Left" Height="53" Margin="327,329,0,0" VerticalAlignment="Top" Width="119" Click="buttonsubmit_Click"/>
+        <Label Content="Name:" HorizontalAlignment="Left" Height="42" Margin="28,23,0,0" VerticalAlignment="Top" Width="93" FontSize="22"/>
+        <TextBox x:Name="textname" HorizontalAlignment="Left" Height="47" Margin="104,18,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="153" FontSize="22"/>
+        <Label Content="Breed:" HorizontalAlignment="Left" Height="42" Margin="28,88,0,0" VerticalAlignment="Top" Width="93" FontSize="22"/>
+        <TextBox x:Name="textbreed" HorizontalAlignment="Left" Height="47" Margin="104,83,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="153" FontSize="22"/>
+        <Label Content="Picture URL:" HorizontalAlignment="Left" Height="42" Margin="28,154,0,0" VerticalAlignment="Top" Width="130" FontSize="22"/>
+        <TextBox x:Name="textpicture" HorizontalAlignment="Left" Height="47" Margin="163,149,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="153" FontSize="22"/>
         <ListBox x:Name="listpets" HorizontalAlignment="Left" Height="160" Margin="481,10,0,0" VerticalAlignment="Top" Width="309" FontSize="22"/>
 
     </Grid>

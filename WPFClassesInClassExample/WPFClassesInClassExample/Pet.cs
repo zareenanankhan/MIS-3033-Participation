@@ -16,5 +16,10 @@ namespace WPFClassesInClassExample
             Breed = string.Empty;
             PictureURL = string.Empty;
         }
+
+        public override string ToString()
+        {
+            return $"{Name} ({Breed})";
+        }
     }
 }
