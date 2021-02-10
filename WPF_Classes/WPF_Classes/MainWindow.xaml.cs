@@ -37,6 +37,7 @@ namespace WPF_Classes
             dobtext = txtDOB.Text;
 
             DateTime dob = Convert.ToDateTime(dobtext);
+
             if (dpDOB.SelectedDate.HasValue)
             { 
                 dob = dpDOB.SelectedDate.Value;
