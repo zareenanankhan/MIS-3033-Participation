@@ -1,0 +1,18 @@
+﻿<Window x:Class="WPF_WebBrowser.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_WebBrowser"
+        mc:Ignorable="d"
+        Title="Let me google that for you!" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="51*"/>
+            <ColumnDefinition Width="349*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="buttongo" Content="Go" Grid.Column="1" HorizontalAlignment="Left" Height="70" Margin="325,55,0,0" VerticalAlignment="Top" Width="76" IsDefault="True" Click="buttongo_Click"/>
+        <TextBox x:Name="textquery" Grid.Column="1" HorizontalAlignment="Left" Height="40" Margin="78,70,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="242"/>
+
+    </Grid>
+</Window>
