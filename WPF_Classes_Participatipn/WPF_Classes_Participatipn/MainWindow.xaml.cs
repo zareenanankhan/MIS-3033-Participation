@@ -118,6 +118,11 @@ namespace WPF_Classes_Participatipn
             textzip.Clear();
         }
 
-    
+        private void listgraduationhandout_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        {
+            StudentDetails newstudent = new StudentDetails();
+            newstudent.StudentSearch((Student)listgraduationhandout.SelectedItem);
+            newstudent.ShowDialog();
+        }
     }
 }

@@ -4,7 +4,7 @@ using System.Text;
 
 namespace WPF_Classes_Participation
 {
-    class Address
+    public class Address
     {
         public int StreetNumber { get; set; }
         public string StreetName { get; set; }

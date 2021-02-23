@@ -32,7 +32,7 @@
         <Label Content="State" HorizontalAlignment="Left" Height="34" Margin="33,353,0,0" VerticalAlignment="Top" Width="120" FontSize="18"/>
         <TextBox x:Name="textstate" HorizontalAlignment="Left" Margin="146,353,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="245" Height="34" FontSize="18"/>
         <Button x:Name="buttonsubmit" Content="Submit Information" HorizontalAlignment="Left" Height="34" Margin="588,347,0,0" VerticalAlignment="Top" Width="186" IsDefault="True" FontSize="20" Click="buttonsubmit_Click" Background="#FFD46262"/>
-        <ListBox x:Name="listgraduationhandout" HorizontalAlignment="Left" Height="219" Margin="400,89,0,0" VerticalAlignment="Top" Width="374"/>
+        <ListBox x:Name="listgraduationhandout" HorizontalAlignment="Left" Height="219" Margin="400,89,0,0" VerticalAlignment="Top" Width="374" MouseDoubleClick="listgraduationhandout_MouseDoubleClick"/>
         <Label x:Name="zip" Content="Zip Code" HorizontalAlignment="Left" Height="34" Margin="33,390,0,0" VerticalAlignment="Top" Width="120" FontSize="18"/>
         <TextBox x:Name="textzip" HorizontalAlignment="Left" Margin="146,390,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="245" Height="34" FontSize="18"/>
 
