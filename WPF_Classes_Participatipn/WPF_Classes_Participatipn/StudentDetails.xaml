@@ -8,27 +8,28 @@
         Title="Student Details" Height="450" Width="800">
     <Grid x:Name="studentdetails">
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="19*"/>
-            <ColumnDefinition Width="6*"/>
+            <ColumnDefinition Width="127*"/>
+            <ColumnDefinition Width="481*"/>
+            <ColumnDefinition Width="192*"/>
         </Grid.ColumnDefinitions>
-        <Label Content="First Name" HorizontalAlignment="Left" Height="34" Margin="21,23,0,0" VerticalAlignment="Top" Width="121" FontSize="18"/>
-        <TextBox HorizontalAlignment="Left" Margin="122,23,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="245" Height="34" FontSize="18"/>
-        <Label Content="First Name" HorizontalAlignment="Left" Height="34" Margin="21,23,0,0" VerticalAlignment="Top" Width="121" FontSize="18"/>
-        <TextBox x:Name="textfirstname" HorizontalAlignment="Left" Margin="122,23,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="245" Height="34" FontSize="18"/>
-        <Label Content="Last Name" HorizontalAlignment="Left" Height="34" Margin="411,23,0,0" VerticalAlignment="Top" Width="121" FontSize="18"/>
-        <TextBox x:Name="textlastname" HorizontalAlignment="Left" Margin="512,23,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="245" Height="34" FontSize="18" Grid.ColumnSpan="2"/>
-        <Label Content="Street Number" HorizontalAlignment="Left" Height="34" Margin="196,148,0,0" VerticalAlignment="Top" Width="146" FontSize="18"/>
-        <TextBox x:Name="textstreetnumber" HorizontalAlignment="Left" Margin="322,148,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="245" Height="34" FontSize="18"/>
-        <Label Content="Street Name" HorizontalAlignment="Left" Height="34" Margin="209,186,0,0" VerticalAlignment="Top" Width="120" FontSize="18"/>
-        <TextBox x:Name="textstreetname" HorizontalAlignment="Left" Margin="322,186,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="245" Height="34" FontSize="18"/>
-        <Label Content="City" HorizontalAlignment="Left" Height="34" Margin="209,226,0,0" VerticalAlignment="Top" Width="120" FontSize="18"/>
-        <TextBox x:Name="textcity" HorizontalAlignment="Left" Margin="322,226,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="245" Height="34" FontSize="18"/>
-        <Label Content="State" HorizontalAlignment="Left" Height="34" Margin="209,264,0,0" VerticalAlignment="Top" Width="120" FontSize="18"/>
-        <TextBox HorizontalAlignment="Left" Margin="322,264,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="245" Height="34" FontSize="18"/>
-        <Label Content="State" HorizontalAlignment="Left" Height="34" Margin="209,264,0,0" VerticalAlignment="Top" Width="120" FontSize="18"/>
-        <TextBox x:Name="textstate" HorizontalAlignment="Left" Margin="322,264,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="245" Height="34" FontSize="18"/>
-        <Label x:Name="zip" Content="Zip Code" HorizontalAlignment="Left" Height="34" Margin="209,301,0,0" VerticalAlignment="Top" Width="120" FontSize="18"/>
-        <TextBox x:Name="textzip" HorizontalAlignment="Left" Margin="322,301,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="245" Height="34" FontSize="18"/>
+        <Label Content="First Name" HorizontalAlignment="Left" Height="34" Margin="21,23,0,0" VerticalAlignment="Top" Width="121" FontSize="18" Grid.ColumnSpan="2"/>
+        <TextBox HorizontalAlignment="Left" Margin="122,23,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="245" Height="34" FontSize="18" Grid.ColumnSpan="2"/>
+        <Label Content="First Name" HorizontalAlignment="Left" Height="34" Margin="21,23,0,0" VerticalAlignment="Top" Width="121" FontSize="18" Grid.ColumnSpan="2"/>
+        <TextBox x:Name="textfirstname" HorizontalAlignment="Left" Margin="122,23,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="245" Height="34" FontSize="18" Grid.ColumnSpan="2"/>
+        <Label Content="Last Name" HorizontalAlignment="Left" Height="34" Margin="284,23,0,0" VerticalAlignment="Top" Width="121" FontSize="18" Grid.Column="1"/>
+        <TextBox x:Name="textlastname" HorizontalAlignment="Left" Margin="385,23,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="245" Height="34" FontSize="18" Grid.ColumnSpan="2" Grid.Column="1"/>
+        <Label Content="Street Number" HorizontalAlignment="Left" Height="34" Margin="69,148,0,0" VerticalAlignment="Top" Width="146" FontSize="18" Grid.Column="1"/>
+        <TextBox x:Name="textstreetnumber" HorizontalAlignment="Left" Margin="195,148,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="245" Height="34" FontSize="18" Grid.Column="1"/>
+        <Label Content="Street Name" HorizontalAlignment="Left" Height="34" Margin="82,186,0,0" VerticalAlignment="Top" Width="120" FontSize="18" Grid.Column="1"/>
+        <TextBox x:Name="textstreetname" HorizontalAlignment="Left" Margin="195,186,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="245" Height="34" FontSize="18" Grid.Column="1"/>
+        <Label Content="City" HorizontalAlignment="Left" Height="34" Margin="82,226,0,0" VerticalAlignment="Top" Width="120" FontSize="18" Grid.Column="1"/>
+        <TextBox x:Name="textcity" HorizontalAlignment="Left" Margin="195,226,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="245" Height="34" FontSize="18" Grid.Column="1"/>
+        <Label Content="State" HorizontalAlignment="Left" Height="34" Margin="82,264,0,0" VerticalAlignment="Top" Width="120" FontSize="18" Grid.Column="1"/>
+        <TextBox HorizontalAlignment="Left" Margin="195,264,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="245" Height="34" FontSize="18" Grid.Column="1"/>
+        <Label Content="State" HorizontalAlignment="Left" Height="34" Margin="82,264,0,0" VerticalAlignment="Top" Width="120" FontSize="18" Grid.Column="1"/>
+        <TextBox x:Name="textstate" HorizontalAlignment="Left" Margin="195,264,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="245" Height="34" FontSize="18" Grid.Column="1"/>
+        <Label x:Name="zip" Content="Zip Code" HorizontalAlignment="Left" Height="34" Margin="82,301,0,0" VerticalAlignment="Top" Width="120" FontSize="18" Grid.Column="1"/>
+        <TextBox x:Name="textzip" HorizontalAlignment="Left" Margin="195,301,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="245" Height="34" FontSize="18" Grid.Column="1"/>
 
     </Grid>
 </Window>
