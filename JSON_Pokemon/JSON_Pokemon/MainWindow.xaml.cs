@@ -28,7 +28,7 @@ namespace JSON_Pokemon
 
             AllPokemonAPI api;
             string url = "https://pokeapi.co/api/v2/pokemon?limit=1200";
-
+         
 
             using (var client=new HttpClient())
             {
@@ -39,11 +39,37 @@ namespace JSON_Pokemon
             foreach(var item in api.results.OrderBy(x =>x.name).ToList())
             {
                 listpokemon.Items.Add(item);
-
-            }
-           
                 
+            }
+
+            // double click item in list box and open new form    
+            // sprites, we only care about front default which has a string data type. 
+           
             
+
         }
+
+        private void listpokemon_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            InformationAPI api1;
+
+            var selectedCharacter = (ResultObject)listpokemon.SelectedItem;
+
+            using (var client = new HttpClient())
+            {
+                string json = client.GetStringAsync(selectedCharacter.url).Result;
+                api1 = JsonConvert.DeserializeObject<InformationAPI>(json);
+            }
+
+            Pokemon wnd = new Pokemon();
+            wnd.setupwindow(api1);
+            wnd.ShowDialog();
+
+
+
+        }
+
+
+
     }
 }

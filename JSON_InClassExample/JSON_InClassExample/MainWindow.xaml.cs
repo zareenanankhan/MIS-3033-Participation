@@ -47,5 +47,7 @@ namespace JSON_InClassExample
             var selectedcharacter = (character)listcharacters.SelectedItem;
             imagecharacter.Source = new BitmapImage(new Uri(selectedcharacter.image));
         }
+
+
     }
 }
