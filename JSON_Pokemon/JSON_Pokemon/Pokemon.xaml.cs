@@ -36,17 +36,24 @@ namespace JSON_Pokemon
 
         private void buttonflip_Click(object sender, RoutedEventArgs e)
         {
+            //bool shouldishowfront = true;
 
-                if (shouldishowfront = true)
+                if (shouldishowfront == true)
                 {
 
                     imagepokemon.Source = new BitmapImage(new Uri(info.sprites.front_default));
+                    shouldishowfront = false;
                 }
                 else
                 {
 
                     imagepokemon.Source = new BitmapImage(new Uri(info.sprites.back_default));
+                    shouldishowfront = true; 
                 }
+
+            
         }
+
+        
     }
 }

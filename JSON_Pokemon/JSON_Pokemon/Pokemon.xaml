@@ -9,7 +9,7 @@
     <Grid>
         <Image x:Name="imagepokemon" HorizontalAlignment="Left" Height="212" Margin="55,54,0,0" VerticalAlignment="Top" Width="347"/>
         <TextBox x:Name="poketext" HorizontalAlignment="Left" Height="71" Margin="55,341,0,0" Text="TextBox" TextWrapping="Wrap" VerticalAlignment="Top" Width="694"/>
-        <Button x:Name="buttonflip" Content="Button" HorizontalAlignment="Left" Height="74" Margin="510,187,0,0" VerticalAlignment="Top" Width="178" Click="buttonflip_Click"/>
-
+        <Button x:Name="buttonflip" Content="Button" HorizontalAlignment="Left" Height="74" Margin="510,187,0,0" VerticalAlignment="Top" Width="178" Click="buttonflip_Click" 
+    ></Button>
     </Grid>
 </Window>
