@@ -36,7 +36,7 @@ namespace JSON_Pokemon
                 api = JsonConvert.DeserializeObject<AllPokemonAPI>(json);
             }
 
-            foreach(var item in api.results.OrderBy(x =>x.name).ToList())
+            foreach(var item in api.results.OrderBy(x=>x.name).ToList())
             {
                 listpokemon.Items.Add(item);
                 

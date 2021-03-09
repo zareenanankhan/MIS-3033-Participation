@@ -28,17 +28,29 @@ namespace JSON_InClassExample
 
             //https://rickandmortyapi.com/api/character
 
-            using (var client =new HttpClient())
+            string url= "https://rickandmortyapi.com/api/character";
+
+            while (string.IsNullOrWhiteSpace(url)==false)
             {
-                string jsondata = client.GetStringAsync("https://rickandmortyapi.com/api/character").Result;
-
-                RickMortyAPI api = JsonConvert.DeserializeObject<RickMortyAPI>(jsondata);
-
-                foreach (var character in api.results)
+                using (var client = new HttpClient())
                 {
-                    listcharacters.Items.Add(character);
-                }
+                    HttpResponseMessage response = client.GetAsync(url).Result;
 
+                    if (response.IsSuccessStatusCode)
+                    {
+                        string jsondata = client.GetStringAsync(url).Result;
+
+                        RickMortyAPI api = JsonConvert.DeserializeObject<RickMortyAPI>(jsondata);
+
+                        foreach (var character in api.results)
+                        {
+                            listcharacters.Items.Add(character);
+                        }
+
+                        url = api.info.next;
+                    }
+                    
+                }
             }
         }
 
