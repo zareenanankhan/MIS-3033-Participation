@@ -12,6 +12,7 @@
         </Grid.Background>
         <ListBox x:Name="listcharacters" HorizontalAlignment="Left" Height="344" Margin="433,0,0,0" VerticalAlignment="Center" Width="342" OpacityMask="Black" SelectionChanged="listcharacters_SelectionChanged"/>
         <Image x:Name="imagecharacter" HorizontalAlignment="Left" Height="344" Margin="10,10,0,0" VerticalAlignment="Top" Width="322"/>
+        <Button Content="Button" HorizontalAlignment="Left" Height="62" Margin="31,343,0,0" VerticalAlignment="Top" Width="173" Click="Button_Click"/>
 
     </Grid>
 </Window>

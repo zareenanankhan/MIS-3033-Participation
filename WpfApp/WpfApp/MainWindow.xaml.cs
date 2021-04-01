@@ -60,9 +60,7 @@ namespace WpfApp
             //        MessageBox.Show("result is not equal to 5!");
             //        break;
             
-            }
-
-            lblOutput.Content = $"Your favorite # mul;tipled by 5 is {(result * 5).ToString("N2")}!";
+            lblOutput.Content = $"Your favorite # multipled by 5 is {(result * 5).ToString("N2")}!";
 
         }
 

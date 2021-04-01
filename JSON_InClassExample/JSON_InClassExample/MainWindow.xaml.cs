@@ -56,8 +56,13 @@ namespace JSON_InClassExample
 
         private void listcharacters_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            var selectedcharacter = (character)listcharacters.SelectedItem;
-            imagecharacter.Source = new BitmapImage(new Uri(selectedcharacter.image));
+            //var selectedcharacter = (character)listcharacters.SelectedItem;
+            //imagecharacter.Source = new BitmapImage(new Uri(selectedcharacter.image));
+            
+            Image newwindow= new Image();
+            newwindow.setupwindow((character)listcharacters.SelectedItem);
+            newwindow.ShowDialog();
+
         }
 
 
