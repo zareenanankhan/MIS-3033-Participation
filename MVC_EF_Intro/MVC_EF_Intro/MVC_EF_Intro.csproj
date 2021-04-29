@@ -209,10 +209,7 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\FootballSchedules\Create.cshtml" />
-    <Content Include="Views\FootballSchedules\Delete.cshtml" />
     <Content Include="Views\FootballSchedules\Details.cshtml" />
-    <Content Include="Views\FootballSchedules\Edit.cshtml" />
     <Content Include="Views\FootballSchedules\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
