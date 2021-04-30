@@ -1,0 +1,28 @@
+﻿@model IEnumerable<MVC_EF_Participation.Models.Student>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Students</h2>
+
+
+
+
+@foreach (var item in Model)
+{
+    <div class="card" style="width: 18rem;">
+        
+        <div class="card-body">
+            <h5 class="card-title">@item.LastName, @item.FirstName, (@item.StudentID)</h5>
+            <p class="card-text">Favorite Color: @item.FavoriteColor</p>
+         
+        </div>
+    </div>
+
+    @*@Html.ActionLink("Details", "Details", new { id = item.StudentID });*@
+
+
+}
+
+
