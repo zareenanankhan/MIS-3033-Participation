@@ -29,3 +29,26 @@ textarea {
     background-color:lightskyblue;
     color:white;
 }
+
+body{
+    padding-top:0px !important;
+}
+
+body{
+    padding-top:50px;
+    padding-bottom:20px;
+}
+
+.registrations {
+    height: 250px;
+    margin: 5px;
+    background-color: lightcoral;
+    color: white;
+}
+
+.courses {
+    height: 250px;
+    margin: 5px;
+    background-color: lavender;
+    color: white;
+}

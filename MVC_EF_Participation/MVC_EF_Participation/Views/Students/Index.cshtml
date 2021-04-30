@@ -12,20 +12,21 @@
 
         @foreach (var item in Model)
         {
-        <a href="~/Students/Details/@item.StudentID">
 
-            <div class="card student" style="width: 18rem;">
+            <a href="~/Students/Details/@item.StudentID">
+
+             <div class="card student" style="width: 18rem;">
 
                 <div class="card-body">
                     <h5 class="card-title">@item.LastName, @item.FirstName, (@item.StudentID)</h5>
                     <p class="card-text">Favorite Color: @item.FavoriteColor</p>
 
                 </div>
-            </div>
+             </div>
 
            
 
-        </a>
+             </a>
         }
 
     </div>

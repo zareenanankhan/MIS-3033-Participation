@@ -4,42 +4,27 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
+<h2>Registrations</h2>
 
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.EnrollmentDate)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Course.CourseName)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Student.FirstName)
-        </th>
-        <th></th>
-    </tr>
+<div class="container">
+    <div class="row">
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.EnrollmentDate)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Course.CourseName)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Student.FirstName)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.RegistrationID }) |
-            @Html.ActionLink("Details", "Details", new { id=item.RegistrationID }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.RegistrationID })
-        </td>
-    </tr>
-}
+        @foreach (var item in Model)
+        {
+            <a href="~/Registrations/Details/@item.RegistrationID">
 
-</table>
+                <div class="card registration" style="width: 18rem;">
+
+                    <div class="card-body">
+                        <h5 class="card-title">Registration ID: @item.RegistrationID</h5>
+                        <p class="card-text">Student ID: @item.StudentID, Enrollment date: @item.EnrollmentDate</p>
+
+                    </div>
+                </div>
+
+
+
+            </a>
+        }
+    </div>
+</div>
