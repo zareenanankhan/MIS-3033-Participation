@@ -7,9 +7,16 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid x:Name="window">
-        <Image x:Name="image" HorizontalAlignment="Left" Height="287" Margin="27,35,0,0" VerticalAlignment="Top" Width="312"/>
-        <Button x:Name="buttonclick" Content="Button" HorizontalAlignment="Left" Height="58" Margin="27,356,0,0" VerticalAlignment="Top" Width="158"/>
-        <ListBox x:Name="listcharacters" HorizontalAlignment="Left" Height="404" Margin="490,10,0,0" VerticalAlignment="Top" Width="286" SelectionChanged="listcharacters_SelectionChanged"/>
+        <Grid.Background>
+            <ImageBrush ImageSource="https://ychef.files.bbci.co.uk/976x549/p02fc1jw.jpg"/>
+        </Grid.Background>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition Width="57*"/>
+            <ColumnDefinition Width="743*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="buttonclick" Content="Button" HorizontalAlignment="Left" Height="58" Margin="27,356,0,0" VerticalAlignment="Top" Width="158" Grid.ColumnSpan="3" Click="buttonclick_Click"/>
+        <TextBox x:Name="textquote" Grid.ColumnSpan="3" HorizontalAlignment="Left" Height="85" Margin="27,30,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="735" FontSize="15"/>
 
     </Grid>
 </Window>

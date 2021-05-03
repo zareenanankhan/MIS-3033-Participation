@@ -23,40 +23,24 @@ namespace MIS3033ExtraCredit
     {
         public MainWindow()
         {
-            InitializeComponent();
+            InitializeComponent(); 
 
-            string url = "https://thesimpsonsquoteapi.glitch.me/quotes";
-
-            while (string.IsNullOrWhiteSpace(url) == false)
-            {
-                using (var client = new HttpClient())
-                {
-                    HttpResponseMessage response = client.GetAsync(url).Result;
-
-                    if (response.IsSuccessStatusCode)
-                    {
-                        string jsondata = client.GetStringAsync(url).Result;
-
-                        SimpsonsAPI api = JsonConvert.DeserializeObject<SimpsonsAPI>(jsondata);
-
-                        foreach (var character in api.results)
-                        {
-                            listcharacters.Items.Add(character);
-                        }
-
-                      
-                    }
-                }
-            }
+           
         }
 
-        public object JsonConvert { get; }
 
-        private void listcharacters_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        private void buttonclick_Click(object sender, RoutedEventArgs e)
         {
-            Image newwindow = new Image();
-            newwindow.setupwindow((character)listcharacters.SelectedItem);
-            newwindow.ShowDialog();
+            SimpsonsAPI api = new SimpsonsAPI();
+            string url = " https://thesimpsonsquoteapi.glitch.me/quotes";
+
+            using (var client = new HttpClient())
+            {
+                string json = client.GetStringAsync(url).Result;
+                api = JsonConvert.DeserializeObject<SimpsonsAPI>(json);
+            }
+
+            textquote.Text = api.ToString();
         }
     }
 
