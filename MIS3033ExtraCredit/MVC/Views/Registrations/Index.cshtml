@@ -1,0 +1,34 @@
+﻿@model IEnumerable<MVC.Models.Registration>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Registrations</h2>
+
+<div class="container">
+    <div class="row">
+
+        @foreach (var item in Model)
+        {
+            {
+
+                <a href="~/Students/Details/@item.CourseID">
+
+                    <div class="card student" style="width: 18rem;">
+
+                        <div class="card-body">
+                            <h5 class="card-title">@item.CourseID, @item.EnrollmentDate</h5>
+                            <p class="card-text">Term Code: @item.StudentID</p>
+
+                        </div>
+                    </div>
+
+
+
+                </a>
+            }
+        }
+
+    </div>
+</div>

@@ -44,9 +44,8 @@ namespace MIS3033ExtraCredit
                             listcharacters.Items.Add(character);
                         }
 
-                        
+                      
                     }
-
                 }
             }
         }
