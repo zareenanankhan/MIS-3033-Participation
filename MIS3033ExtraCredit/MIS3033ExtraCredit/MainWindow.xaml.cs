@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
@@ -24,10 +25,13 @@ namespace MIS3033ExtraCredit
         public MainWindow()
         {
             InitializeComponent(); 
-
-           
+  
         }
 
+        private void InitializeComponent()
+        {
+            throw new NotImplementedException();
+        }
 
         private void buttonclick_Click(object sender, RoutedEventArgs e)
         {
